@@ -1,0 +1,27 @@
+<html>
+<body>
+
+<p>Passando valor pelo método addEventListener() .</p>
+
+<p>Clique para fazer 3 * 10.</p>
+
+<button id="myBtn">Calcule</button>
+
+<p id="demo"></p>
+
+<script>
+var p1 = 3;
+var p2 = 10;
+
+document.getElementById("myBtn").addEventListener("click", function() {
+    myFunction(p1, p2);
+});
+
+function myFunction(a, b) {
+    var result = a * b;
+    document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>

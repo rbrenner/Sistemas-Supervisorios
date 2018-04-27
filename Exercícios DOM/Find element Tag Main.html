@@ -1,0 +1,21 @@
+
+<html>
+<body>
+
+<p>Olá Pessoal!</p>
+
+<div id="main">
+<p>De novo o DOM é útil.</p>
+<p>Este exemplo demonstra o método <b>getElementsByTagName</b> !</p>
+</div>
+
+<p id="demonstração"></p>
+
+<script>
+var x = document.getElementById("main");
+var y = x.getElementsByTagName("p");
+document.getElementById("demonstração").innerHTML = 'O terceiro parágrafo (index 1) dentro de "main" é: ' + y[1].innerHTML;
+</script>
+
+</body>
+</html>

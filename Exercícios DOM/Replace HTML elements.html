@@ -1,0 +1,19 @@
+<html>
+<body>
+
+<div id="div1">
+<p id="p1">Este é um novo o primeiro parágrafo.</p>
+<p id="p2">Este é um novo outro parágrafo.</p>
+</div>
+
+<script>
+var parent = document.getElementById("div1");
+var child = document.getElementById("p1");
+var para = document.createElement("p");
+var node = document.createTextNode("Este é um parágrafo substituído.");
+para.appendChild(node);
+parent.replaceChild(para,child);
+</script>
+
+</body>
+</html>

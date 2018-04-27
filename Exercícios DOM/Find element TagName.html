@@ -1,0 +1,18 @@
+<html>
+    <body>
+
+        <p>Olá Pessoal!</p>
+
+        <p>Parece que o DOM é muito útil!</p>
+
+        <p>Este exemplo demonstra o método <b>getElementsByTagName</b>.</p>
+
+        <p id="exemplo"></p>
+
+    <script>
+        var x = document.getElementsByTagName("p");
+        document.getElementById("exemplo").innerHTML = 'O segundo parágrafo (index 1) é: ' + x[1].innerHTML;
+    </script>
+
+</body>
+</html>

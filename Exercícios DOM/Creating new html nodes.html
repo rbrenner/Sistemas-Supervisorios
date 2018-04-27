@@ -1,0 +1,18 @@
+<html>
+<body>
+
+<div id="div1">
+<p id="p1">Este e um parágrafo.</p>
+<p id="p2">E este é outro parágrafo.</p>
+</div>
+
+<script>
+var para = document.createElement("p");
+var node = document.createTextNode("Este é um apêndice criado.");
+para.appendChild(node);
+var element = document.getElementById("div1");
+element.appendChild(para);
+</script>
+
+</body>
+</html>

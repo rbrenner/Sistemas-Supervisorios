@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<p>Este exemplo usa addEventListener() para adicionar dois eventos ao mesmo botão.</p>
+
+<button id="myBtn">Nem TENTE!</button>
+
+<script>
+var x = document.getElementById("myBtn");
+x.addEventListener("click", myFunction);
+x.addEventListener("click", someOtherFunction);
+
+function myFunction() {
+    alert ("PopUp de Brinde!");
+}
+
+function someOtherFunction() {
+    alert ("Leva outro pra largar de ser besta!");
+}
+</script>
+
+</body>
+</html>

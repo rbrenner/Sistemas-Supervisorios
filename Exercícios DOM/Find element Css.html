@@ -1,0 +1,17 @@
+<html>
+<body>
+
+<p>Hello World!</p>
+
+<p class="introdução">Olha o DOM de novo!</p>
+<p class="introdução">Este exemplo demonstra o método <b>querySelectorAll</b>.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.querySelectorAll("p.introdução");
+document.getElementById("demo").innerHTML = 'O segundo parágrafo (index 1) com class="introdução" é: ' + x[1].innerHTML;
+</script>
+
+</body>
+</html>

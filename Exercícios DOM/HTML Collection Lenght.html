@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+
+<p>Fala Galera!</p>
+
+<p>Olá Alguém!</p>
+
+<p>Clique no botão para trocar a cor dos elementos:</p>
+
+<button onclick="myFunction()">Clique!</button>
+
+<script>
+function myFunction() {
+    var myCollection = document.getElementsByTagName("p");
+    var i;
+    for (i = 0; i < myCollection.length; i++) {
+        myCollection[i].style.color = "blue";
+    }
+}
+</script>
+
+</body>
+</html>
